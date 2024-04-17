@@ -102,7 +102,7 @@ class CatchCoinsGame(PygameBaseGame):
                     if generate_food_count > generate_food_freq:
                         generate_food_freq = random.randint(10, 20)
                         generate_food_count = 0
-                        food = Food(game_images, random.choice(['31',]*2  + ['32',]*2  + ['33',]*2 + ['34',]*10 + ['35',]*10 + ['36',]*10 + ['37',]*2 + ['38',]*2 + ['39']*2), cfg.SCREENSIZE)
+                        food = Food(game_images, random.choice(['31',]*4  + ['32',]*4  + ['33',]*4 + ['34',]*10 + ['35',]*10 + ['36',]*10 + ['37',]*4 + ['38',]*4 + ['39']*4), cfg.SCREENSIZE)
                         food_sprites_group.add(food)
                     for food in food_sprites_group:
                         if food.update(): food_sprites_group.remove(food)
@@ -156,7 +156,7 @@ class CatchCoinsGame(PygameBaseGame):
                     if generate_food_count > generate_food_freq:
                         generate_food_freq = random.randint(10, 20)
                         generate_food_count = 0
-                        food = Food(game_images, random.choice(['31',]*10 + ['32',]*10 + ['33',]*10 + ['34',]*2  + ['35',]*2  + ['36',]*2  + ['37',]*2 + ['38',]*2 + ['39']*2), cfg.SCREENSIZE)
+                        food = Food(game_images, random.choice(['31',]*10 + ['32',]*10 + ['33',]*10 + ['34',]*4  + ['35',]*4  + ['36',]*4  + ['37',]*4 + ['38',]*4 + ['39']*4), cfg.SCREENSIZE)
                         food_sprites_group.add(food)
                     for food in food_sprites_group:
                         if food.update(): food_sprites_group.remove(food)
@@ -210,7 +210,7 @@ class CatchCoinsGame(PygameBaseGame):
                     if generate_food_count > generate_food_freq:
                         generate_food_freq = random.randint(10, 20)
                         generate_food_count = 0
-                        food = Food(game_images, random.choice(['31',]*2 + ['32',]*2 + ['33',]*2 + ['34',]*2 + ['35',]*2 + ['36',]*2 + ['37',] * 10 + ['38',] * 10+ ['39'] * 10), cfg.SCREENSIZE)
+                        food = Food(game_images, random.choice(['31',]*4 + ['32',]*4 + ['33',]*4 + ['34',]*4 + ['35',]*4 + ['36',]*4 + ['37',] * 10 + ['38',] * 10+ ['39'] * 10), cfg.SCREENSIZE)
                         food_sprites_group.add(food)
                     for food in food_sprites_group:
                         if food.update(): food_sprites_group.remove(food)
