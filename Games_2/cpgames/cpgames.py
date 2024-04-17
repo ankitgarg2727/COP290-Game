@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 class CPGames():
     def __init__(self):
-        supported_games = {
+        self.supported_games = {
             'catchcoins': CatchCoinsGame,    
         }
     def execute(self, config={}):
