@@ -1,4 +1,0 @@
-
-from .games import (
-     CatchCoinsGame
-)
