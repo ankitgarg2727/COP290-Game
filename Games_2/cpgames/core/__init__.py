@@ -1,0 +1,4 @@
+
+from .games import (
+     CatchCoinsGame
+)
